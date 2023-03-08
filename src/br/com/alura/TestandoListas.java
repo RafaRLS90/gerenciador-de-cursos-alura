@@ -1,6 +1,7 @@
 package br.com.alura;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TestandoListas {
 	public static void main(String[] args) {
@@ -25,5 +26,25 @@ public class TestandoListas {
 		
 		String primeiraAula = aulas.get(0);
 		System.out.println("A primeira aula é " + primeiraAula);
+	
+		for(int i= 0; i < aulas.size(); i++) {
+			System.out.println("aula : " + aulas.get(i));
+		}
+		
+		System.out.println(aulas.size());
+		
+		aulas.forEach(aula -> {
+			System.out.println("percorrendo:");
+			System.out.println("Aula " + aula);
+		});
+		
+		aulas.add("Aumentando nosso conhecimento");
+		System.out.println(aulas);
+		
+		Collections.sort(aulas);
+		System.out.println("Depois de ordenado: ");
+		System.out.println(aulas);
 	}
+	
+	
 }
