@@ -8,5 +8,18 @@ public class Aula {
 		this.tempo = tempo;
 	}
 	
+	public String getTitulo() {
+		return titulo;
+	}
+	
+	public int getTempo() {
+		return tempo;
+	}
+	
+	@Override
+	public String toString() {
+		
+		return "[Aula: " + this.titulo + ", " + this.tempo + "minuto]";
+	}
 	
 }
